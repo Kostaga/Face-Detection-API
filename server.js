@@ -18,13 +18,13 @@ const handleImage = imageHandler;
 const db = knex({
 	client: 'pg',
 	connection: {
-		connectionString: process.env.DATABASE_URL,
+		connectionString: "postgresql://postgres:jRD3D55fbHLEvKpvwwjP@containers-us-west-79.railway.app:6861/railway",
 		ssl: { rejectUnauthorized: false},
-		host: process.env.DATABASE_HOST,
-		port: 5432,
-		user: process.env.DATABASE_USER,
-		password: process.env.DATABASE_PW,
-		database: process.env.DATABASE_DB
+		host: "containers-us-west-79.railway.app",
+		port: 6861,
+		user: 'postgres',
+		password: 'jRD3D55fbHLEvKpvwwjP',
+		database: "railway"
 	}
 });
 
